@@ -19,7 +19,7 @@ class App(QMainWindow):
     def paintEvent(self, event):
         self.qp = QPainter()
         self.qp.begin(self)
-        self.qp.setBrush(QColor(255, 255, 0))
+        self.qp.setPen(QColor(255, 255, 0))
         self.drawCircle()
         self.qp.end()
 
